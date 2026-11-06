@@ -123,6 +123,12 @@
           <p>Your first name and the song playing (name, artist, cover), for friends you've added. Kept under a random id only your friends get; nothing else can read it. Never audio.</p>
           <p class="control">From version 1.2. Off in the menu bar's Listen along item, <strong>Friends see my song anywhere</strong>; <strong>Forget what this Mac shared</strong> deletes it.</p>
         </li>
+        <li class="reveal">
+          <h3>Your account</h3>
+          <p class="to">To Afterglow's database, and Stripe</p>
+          <p>Your email, your password stored only as a one-way hash, and whether you're a member or were invited. If you joined with an invite link, Aryen, who made it, sees which email used it. Payments go to Stripe: Afterglow never sees your card. Membership pricing counts the months you've paid in a row, nothing about what you listen to. The account pages keep your sign-in only while they're open, never in your browser's storage.</p>
+          <p class="control">Only in the test build, for now. <strong>Delete account</strong> on the account page removes it and ends any membership.</p>
+        </li>
     </ul>
     <p class="fine reveal">To stop one Mac flooding the database, it keeps a scrambled, one-way form of a sender's address for a day. The app's key can't browse it: it can only send this Mac's times, fetch a song's combined times and delete what this Mac sent.</p>
   </section>

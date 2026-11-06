@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self' https://pkiblvyhhzzajhjlnjjh.supabase.co http://127.0.0.1:54321; form-action 'none'; base-uri 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Your account · Afterglow</title>
+<meta name="description" content="Your Afterglow account: your membership, invites and the test build.">
+<meta property="og:title" content="Your Afterglow account">
+<meta property="og:description" content="Light and lyrics for every song: an edge light in the album's colours and lyrics on your Mac's lock screen.">
+<meta property="og:image" content="https://aryenp.github.io/afterglow/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121110">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="../icon-256.png">
+<link rel="apple-touch-icon" href="../icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,600;125,700;125,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css?v=40">
+<link rel="stylesheet" href="account.css?v=2">
+<script src="boot.js?v=1"></script>
+<script type="module" src="account.js?v=2"></script>
+</head>
+<body class="page-account">
+<a class="skip" href="#main">Skip to content</a>
+<p class="framed-note">For your safety, this page only opens on its own. <a class="link" href="./" target="_top">Open your Afterglow account</a></p>
+
+<svg class="sprite" width="0" height="0" aria-hidden="true">
+  <defs>
+    <linearGradient id="mark-bar" gradientUnits="userSpaceOnUse" x1="0" y1="90" x2="0" y2="20"><stop offset="0" stop-color="#FFD27A"/><stop offset=".35" stop-color="#FF7A59"/><stop offset=".65" stop-color="#FF5FA8"/><stop offset="1" stop-color="#8E5BFF"/></linearGradient>
+    <radialGradient id="mark-halo"><stop offset="0" stop-color="#FFE3A8" stop-opacity=".75"/><stop offset="1" stop-color="#FFE3A8" stop-opacity="0"/></radialGradient>
+    <filter id="mark-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <symbol id="star" viewBox="-1 -1 2 2"><path d="M0-1Q.16-.16 1 0Q.16 .16 0 1Q-.16 .16-1 0Q-.16-.16 0-1Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <a class="brand" href="../" aria-label="Afterglow home">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="nav" aria-label="Pages">
+    <a href="../">Home</a>
+    <a href="../install.html">Install</a>
+    <a href="../updates.html">Updates</a>
+  </nav>
+  <a class="button small" href="https://github.com/AryenP/afterglow/releases/latest/download/Afterglow.pkg">Download</a>
+</header>
+
+<main id="main" tabindex="-1">
+  <noscript>
+    <section class="page-head">
+      <h1 class="display">Your account</h1>
+      <p class="lead">Signing in needs JavaScript. Turn it on for this page, then reload it.</p>
+    </section>
+  </noscript>
+
+  <!-- Signed out: sign in, make an account, or reset a password -->
+  <section class="gate" id="signed-out" aria-labelledby="gate-title" hidden>
+    <div class="gate-copy">
+      <h1 id="gate-title" class="display rise">Your account</h1>
+      <p class="lead rise">Sign in to see your membership, use an invite and get the test build.</p>
+    </div>
+    <div class="auth-stage rise">
+      <svg class="auth-star" viewBox="-1 -1 2 2" aria-hidden="true"><use href="#star" x="-1" y="-1" width="2" height="2"/></svg>
+      <div class="auth-card" id="auth"></div>
+    </div>
+  </section>
+
+  <!-- Signed in -->
+  <section class="acct" id="signed-in" aria-labelledby="acct-title" hidden>
+    <div class="acct-burst" aria-hidden="true"><svg viewBox="-1 -1 2 2"><use href="#star" x="-1" y="-1" width="2" height="2"/></svg></div>
+    <header class="page-head acct-head">
+      <h1 id="acct-title" class="display rise" tabindex="-1">Your account</h1>
+      <p class="lead rise">Signed in as <strong class="acct-email" id="me-email"></strong></p>
+      <div class="acct-notice form-msg" id="acct-notice" aria-live="polite" aria-atomic="true"></div>
+    </header>
+
+    <!-- Membership: what you have, what it costs, and changing it -->
+    <section class="wrap acct-section" id="membership" aria-labelledby="membership-title">
+      <h2 id="membership-title" class="acct-section-title rise">Membership</h2>
+      <div class="acct-grid">
+        <div class="acct-main">
+          <article class="pass rise" id="pass" data-state="loading" aria-labelledby="pass-status">
+            <span class="pass-rim" aria-hidden="true"></span>
+            <h3 class="pass-status" id="pass-status"><span class="pass-kind">Membership</span><span class="visually-hidden">: </span><span class="pass-unit">Looking it up</span></h3>
+            <p class="pass-note" id="pass-note"></p>
+            <div class="pass-actions">
+              <button type="button" class="button" id="join" hidden><svg class="star" aria-hidden="true"><use href="#star"/></svg>Become a member</button>
+              <button type="button" class="button quiet" id="manage" hidden><svg class="star" aria-hidden="true"><use href="#star"/></svg>Manage billing</button>
+              <a class="button quiet" id="build" hidden><svg class="star" aria-hidden="true"><use href="#star"/></svg>Download the test build</a>
+            </div>
+            <p class="pass-build" id="build-version" hidden></p>
+            <div class="form-msg" id="pass-msg" aria-live="polite" aria-atomic="true"></div>
+          </article>
+
+          <section class="tile" aria-labelledby="invite-title">
+            <h3 id="invite-title" class="tile-title">Have an invite?</h3>
+            <p class="tile-text">Paste the link or the code someone sent you. Each invite adds its days to this account.</p>
+            <form class="inline-form" id="redeem" novalidate>
+              <div class="field">
+                <label for="invite-code">Invite link or code</label>
+                <div class="inline-row">
+                  <input id="invite-code" name="invite" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="redeem-msg">
+                  <button class="button" type="submit" id="redeem-button"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Use invite</button>
+                </div>
+              </div>
+              <div class="form-msg" id="redeem-msg" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </section>
+        </div>
+
+        <div class="acct-side">
+          <section class="ladder rise" id="ladder" aria-labelledby="ladder-title" hidden>
+            <h3 id="ladder-title" class="ladder-title">What it costs</h3>
+            <p class="ladder-text" id="ladder-text"></p>
+            <div class="ladder-sky">
+              <svg class="ladder-line" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"><polyline class="ladder-tail" id="ladder-tail" points="0,0 0,0"/><polyline id="ladder-line" points="0,0 0,0"/></svg>
+              <ol class="ladder-steps" id="ladder-steps"></ol>
+            </div>
+            <p class="ladder-again"><svg class="ladder-loop" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4 3.8v3.9h3.9"/></svg><span id="ladder-again"></span></p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account: who you are, your password, signing out, deleting -->
+    <section class="wrap acct-section" id="settings" aria-labelledby="settings-title">
+      <h2 id="settings-title" class="acct-section-title">Account</h2>
+      <div class="settings">
+        <div class="setting">
+          <div class="setting-what">
+            <h3>Email</h3>
+            <p class="setting-value" id="set-email"></p>
+          </div>
+        </div>
+
+        <div class="setting">
+          <div class="setting-what">
+            <h3>Password</h3>
+            <p>Changing it signs out your other devices, like the Mac app.</p>
+          </div>
+          <button type="button" class="button quiet small" id="pw-open" aria-expanded="false" aria-controls="pw-form">Change password</button>
+          <form class="setting-form" id="pw-form" novalidate hidden aria-label="Change password">
+            <input class="visually-hidden" id="pw-username" type="email" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+            <div class="field">
+              <label for="pw-current">Current password</label>
+              <div class="pw"><input id="pw-current" name="current-password" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" required><button type="button" class="pw-toggle" aria-controls="pw-current" aria-label="Show password">Show</button></div>
+            </div>
+            <div class="field">
+              <label for="pw-new">New password</label>
+              <div class="pw"><input id="pw-new" name="new-password" type="password" autocomplete="new-password" autocapitalize="off" spellcheck="false" minlength="8" required aria-describedby="pw-new-hint"><button type="button" class="pw-toggle" aria-controls="pw-new" aria-label="Show password">Show</button></div>
+              <p class="field-hint" id="pw-new-hint">At least 8 characters, with letters and numbers.</p>
+            </div>
+            <div class="form-msg" id="pw-msg" aria-live="polite" aria-atomic="true"></div>
+            <div class="danger-actions">
+              <button type="submit" class="button" id="pw-save"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Save new password</button>
+              <button type="button" class="button quiet" id="pw-cancel">Cancel</button>
+            </div>
+          </form>
+          <div class="form-msg setting-done" id="pw-done" aria-live="polite" aria-atomic="true"></div>
+        </div>
+
+        <div class="setting" id="owner-setting" hidden>
+          <div class="setting-what">
+            <h3>Invite links</h3>
+            <p>Make free-access links for friends, and see who has used them.</p>
+          </div>
+          <a class="button quiet small" href="../owner/">Open invite links</a>
+        </div>
+
+        <div class="setting">
+          <div class="setting-what">
+            <h3>Sign out</h3>
+            <p>Signs out this browser. The Mac app stays signed in.</p>
+          </div>
+          <button type="button" class="button quiet small" id="sign-out">Sign out</button>
+        </div>
+
+        <div class="setting">
+          <div class="setting-what">
+            <h3>Delete account</h3>
+            <p>Ends any membership and deletes everything stored for this account.</p>
+          </div>
+          <button type="button" class="button quiet small danger-text" id="delete-open" aria-expanded="false" aria-controls="delete-panel">Delete account</button>
+          <form class="setting-form danger-zone" id="delete-panel" novalidate hidden aria-labelledby="delete-title">
+            <h4 id="delete-title" class="tile-title">Delete your account?</h4>
+            <p class="tile-text">This ends any membership at Stripe, so nothing more is charged, then deletes your account and everything stored for it, including invite days. It can't be undone.</p>
+            <input class="visually-hidden" id="delete-username" type="email" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+            <div class="field">
+              <label for="delete-password">Enter your password to confirm</label>
+              <div class="pw"><input id="delete-password" name="password" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" required><button type="button" class="pw-toggle" aria-controls="delete-password" aria-label="Show password">Show</button></div>
+            </div>
+            <div class="form-msg" id="delete-msg" aria-live="polite" aria-atomic="true"></div>
+            <div class="danger-actions">
+              <button type="submit" class="button danger" id="delete-button"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Delete my account</button>
+              <button type="button" class="button quiet" id="delete-cancel">Keep my account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- After deleting -->
+  <section class="page-head" id="deleted" aria-labelledby="deleted-title" hidden>
+    <h1 id="deleted-title" class="display" tabindex="-1">Your account is deleted</h1>
+    <p class="lead">The account and everything stored for it are gone. Any membership has ended, so nothing more is charged.</p>
+    <div class="hero-action">
+      <a class="button" href="../"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Back to Afterglow</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="brand" href="../"><svg class="mark still" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="footer-links" aria-label="More">
+    <a href="../install.html">Install</a>
+    <a href="../updates.html">Updates</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="https://github.com/AryenP/afterglow/issues">Report a problem</a>
+  </nav>
+  <p class="footer-note">© 2026 Afterglow · Made by <a class="link" href="https://aryenp.github.io/">Aryen</a> · Not affiliated with Spotify or Apple.</p>
+</footer>
+
+<script src="../site.js?v=33"></script>
+</body>
+</html>

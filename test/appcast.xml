@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Afterglow</title>
+    <item>
+      <title>Afterglow 1.5-test.1</title>
+      <pubDate>Fri, 06 Nov 2026 06:11:01 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.5-test.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/AryenP/afterglow/releases/tag/v1.5-test.1</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/AryenP/afterglow/releases/download/v1.5-test.1/Afterglow.zip" sparkle:edSignature="0e4gEmrTDYHYGahdsH9XcilPu7MfiIT+iNrOSenwpYxruAp1p7CAQdBSUUGMZKwBM2I6EmPB7tEtfssUcVSTCw==" length="5047071" type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>

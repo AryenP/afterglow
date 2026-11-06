@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self' https://pkiblvyhhzzajhjlnjjh.supabase.co http://127.0.0.1:54321; form-action 'none'; base-uri 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>You're invited · Afterglow</title>
+<meta name="description" content="30 days of Afterglow, free: light and lyrics for every song on your Mac.">
+<meta property="og:title" content="You're invited to Afterglow">
+<meta property="og:description" content="30 days of Afterglow, free: the edge of your Mac's screen glows in the album's colours, and the lyrics light up on your lock screen.">
+<meta property="og:image" content="https://aryenp.github.io/afterglow/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121110">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="../icon-256.png">
+<link rel="apple-touch-icon" href="../icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,600;125,700;125,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css?v=40">
+<link rel="stylesheet" href="../account/account.css?v=2">
+<script src="../account/boot.js?v=1" data-invite></script>
+<script type="module" src="join.js?v=1"></script>
+</head>
+<body class="page-join">
+<a class="skip" href="#main">Skip to content</a>
+<p class="framed-note">For your safety, this page only opens on its own. Open your invite link straight from the message it came in.</p>
+
+<svg class="sprite" width="0" height="0" aria-hidden="true">
+  <defs>
+    <linearGradient id="mark-bar" gradientUnits="userSpaceOnUse" x1="0" y1="90" x2="0" y2="20"><stop offset="0" stop-color="#FFD27A"/><stop offset=".35" stop-color="#FF7A59"/><stop offset=".65" stop-color="#FF5FA8"/><stop offset="1" stop-color="#8E5BFF"/></linearGradient>
+    <radialGradient id="mark-halo"><stop offset="0" stop-color="#FFE3A8" stop-opacity=".75"/><stop offset="1" stop-color="#FFE3A8" stop-opacity="0"/></radialGradient>
+    <filter id="mark-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <symbol id="star" viewBox="-1 -1 2 2"><path d="M0-1Q.16-.16 1 0Q.16 .16 0 1Q-.16 .16-1 0Q-.16-.16 0-1Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <a class="brand" href="../" aria-label="Afterglow home">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="nav" aria-label="Pages">
+    <a href="../">Home</a>
+    <a href="../install.html">Install</a>
+    <a href="../updates.html">Updates</a>
+  </nav>
+  <a class="button small" href="https://github.com/AryenP/afterglow/releases/latest/download/Afterglow.pkg">Download</a>
+</header>
+
+<main id="main" tabindex="-1">
+  <noscript>
+    <section class="page-head">
+      <h1 class="display">You're invited</h1>
+      <p class="lead">Using an invite needs JavaScript. Turn it on for this page, then open your invite link again.</p>
+    </section>
+  </noscript>
+
+  <!-- An invite: make an account (or sign in), enter the emailed code, and the days are added -->
+  <section class="join-hero" id="invite" aria-labelledby="join-title" hidden>
+    <div class="join-copy">
+      <h1 id="join-title" class="join-title">
+        <span class="join-invited rise">You're invited</span><span class="visually-hidden">: </span>
+        <span class="join-gift rise"><span class="join-days">30</span> <span class="join-what">days of Afterglow, free</span></span>
+      </h1>
+      <p class="lead rise">The edge of your Mac's screen glows in the album's colours, and the lyrics light up on your lock screen, word by word.</p>
+    </div>
+
+    <div class="auth-stage rise" id="stage">
+      <svg class="auth-star" viewBox="-1 -1 2 2" aria-hidden="true"><use href="#star" x="-1" y="-1" width="2" height="2"/></svg>
+      <div class="auth-card join-card">
+        <ol class="join-steps" id="steps" aria-label="Steps to use your invite">
+          <li data-step="account"><span class="join-step-star" aria-hidden="true"><svg><use href="#star"/></svg></span>Your account</li>
+          <li data-step="code"><span class="join-step-star" aria-hidden="true"><svg><use href="#star"/></svg></span>Email code</li>
+          <li data-step="days"><span class="join-step-star" aria-hidden="true"><svg><use href="#star"/></svg></span><span id="step-days">30 days</span></li>
+        </ol>
+
+        <div id="join-auth"></div>
+
+        <div class="join-panel" id="join-confirm" hidden>
+          <h2 class="auth-title" id="confirm-title" tabindex="-1">Use your invite</h2>
+          <p class="auth-text">You're signed in as <strong class="auth-email" id="confirm-email"></strong>. The days go onto this account.</p>
+          <div class="form-msg" id="confirm-msg" aria-live="polite" aria-atomic="true"></div>
+          <button type="button" class="button wide" id="confirm-use"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Add the days to my account</button>
+          <p class="auth-switch">Not you? <button type="button" class="text-button" id="confirm-switch">Use a different account</button></p>
+        </div>
+
+        <div class="join-panel" id="join-working" hidden>
+          <h2 class="auth-title" id="working-title" tabindex="-1">Adding your days</h2>
+          <p class="auth-text">One moment.</p>
+        </div>
+
+        <div class="join-panel join-done" id="join-done" hidden>
+          <h2 class="join-done-title" id="done-title" tabindex="-1"><span class="join-done-days" id="done-days">30 days</span> <span class="auth-title">are yours</span></h2>
+          <p class="auth-text" id="done-until"></p>
+          <div class="join-next">
+            <a class="button wide" id="done-build" hidden><svg class="star" aria-hidden="true"><use href="#star"/></svg>Download the test build</a>
+            <p class="build-hint">If your Mac won't open it: <strong>System Settings</strong>, <strong>Privacy &amp; Security</strong>, <strong>Open Anyway</strong>. On macOS 14, Control-click it and choose <strong>Open</strong>.</p>
+            <p>Open Afterglow and sign in with <strong id="done-email"></strong>.</p>
+            <p><a class="text-button" href="../account/">See your account</a></p>
+          </div>
+        </div>
+
+        <div class="join-panel" id="join-problem" hidden>
+          <h2 class="auth-title" id="problem-title" tabindex="-1"></h2>
+          <p class="auth-text" id="problem-text"></p>
+          <a class="button wide" href="../account/"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Go to your account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- No code: the link was cut short, or this page was opened on its own -->
+  <section class="page-head join-missing" id="missing" aria-labelledby="missing-title" hidden>
+    <h1 id="missing-title" class="display rise">This invite link is incomplete</h1>
+    <p class="lead rise">An invite link ends with a long code after a #. Open the whole link from the message it came in, or ask the person who sent it for a new one.</p>
+    <div class="hero-action rise">
+      <a class="button" href="../account/"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Go to your account</a>
+      <a class="button quiet" href="../">What is Afterglow?</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="brand" href="../"><svg class="mark still" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="footer-links" aria-label="More">
+    <a href="../install.html">Install</a>
+    <a href="../updates.html">Updates</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="https://github.com/AryenP/afterglow/issues">Report a problem</a>
+  </nav>
+  <p class="footer-note">© 2026 Afterglow · Made by <a class="link" href="https://aryenp.github.io/">Aryen</a> · Not affiliated with Spotify or Apple.</p>
+</footer>
+
+<script src="../site.js?v=33"></script>
+</body>
+</html>
