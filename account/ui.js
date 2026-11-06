@@ -270,7 +270,10 @@ export function mountAuth(root, options = {}) {
   const codeView = view('code', 'Check your email',
     h('span', null, 'We sent a 6-digit code to ', cdEmail, '. It works for 15 minutes.'),
     cd.code.wrap, cd.password.wrap, cd.msg, cd.submit,
-    h('p', { class: 'auth-switch auth-row' }, cd.resend, h('button', { type: 'button', class: 'text-button', onclick: () => show(allowCreate ? 'create' : 'signin', { email: state.email }) }, 'Use a different email')));
+    h('p', { class: 'auth-switch auth-row' }, cd.resend, h('button', { type: 'button', class: 'text-button', onclick: () => show(allowCreate ? 'create' : 'signin', { email: state.email }) }, 'Use a different email')),
+    // No code is sent when the email already has an account (the server doesn't say so, to keep accounts private).
+    h('p', { class: 'auth-aside' }, 'No code? If this email already has an account, ',
+      h('button', { type: 'button', class: 'text-button', onclick: () => show('signin', { email: state.email }) }, 'sign in instead'), '.'));
 
   // ---- a new account confirmed, its password still to set ----
   const ch = { password: passwordField('choose-password', { label: 'Your password', fresh: true }), msg: region(), submit: submitButton('Save and continue') };
