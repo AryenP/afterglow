@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterglow · Light and lyrics for your Mac</title>
+<meta name="description" content="Afterglow is a free Mac app that makes the edge of your screen glow in the album's colours and puts the lyrics on your lock screen, word by word.">
+<meta property="og:title" content="Afterglow">
+<meta property="og:description" content="Light and lyrics for every song: an edge light in the album's colours and lyrics on your Mac's lock screen.">
+<meta property="og:image" content="https://aryenp.github.io/afterglow/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121110">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="icon-256.png">
+<link rel="apple-touch-icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,600;125,700;125,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=40">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('afterglow-seen'))document.documentElement.classList.add('seen');sessionStorage.setItem('afterglow-seen','1')}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="mark-bar" gradientUnits="userSpaceOnUse" x1="0" y1="90" x2="0" y2="20"><stop offset="0" stop-color="#FFD27A"/><stop offset=".35" stop-color="#FF7A59"/><stop offset=".65" stop-color="#FF5FA8"/><stop offset="1" stop-color="#8E5BFF"/></linearGradient>
+    <radialGradient id="mark-halo"><stop offset="0" stop-color="#FFE3A8" stop-opacity=".75"/><stop offset="1" stop-color="#FFE3A8" stop-opacity="0"/></radialGradient>
+    <filter id="mark-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <symbol id="star" viewBox="-1 -1 2 2"><path d="M0-1Q.16-.16 1 0Q.16 .16 0 1Q-.16 .16-1 0Q-.16-.16 0-1Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <a class="brand" href="./" aria-label="Afterglow home">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="nav" aria-label="Pages">
+    <a href="./" aria-current="page">Home</a>
+    <a href="install.html">Install</a>
+    <a href="updates.html">Updates</a>
+  </nav>
+  <a class="button small" href="https://github.com/AryenP/afterglow/releases/latest/download/Afterglow.pkg">Download</a>
+</header>
+
+<main id="main" tabindex="-1">
+  <section data-live class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title" class="display"><span class="rise">Light and lyrics</span> <span class="rise">for every song</span></h1>
+      <p class="lead rise">The edge of your Mac's screen glows in the album's colours, and the lyrics light up on your lock screen, word by word.</p>
+      <div class="hero-action rise">
+        <a class="button" href="install.html"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Get Afterglow</a>
+        <a class="button quiet" href="#try">Try a song</a>
+      </div>
+      <p class="meta rise">Version 1.3.1 · Free · Apple silicon · macOS 14.2 or later · Spotify and Apple Music</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <svg class="stage-star" viewBox="-1 -1 2 2"><use href="#star" x="-1" y="-1" width="2" height="2"/></svg>
+    </div>
+  </section>
+
+  <section class="section wrap try" id="try" aria-labelledby="try-title">
+    <div class="section-head center">
+      <h2 id="try-title" class="head reveal">See it on your lock screen</h2>
+      <p class="lead reveal">Pick a look, then try a song.</p>
+    </div>
+
+    <div data-live class="device reveal" data-look="constellation" data-light="sync">
+      <div class="screen">
+        <div class="wallpaper"></div>
+        <div class="lock">
+          <p class="lock-date">Tuesday, November 3</p>
+          <p class="lock-time">9:41</p>
+          <div class="card">
+            <div class="card-art" aria-hidden="true"></div>
+            <div class="card-text">
+              <p class="card-title">Edge of the Light</p>
+              <p class="card-artist">Afterglow</p>
+              <div class="card-bar"><span></span></div>
+            </div>
+            <div class="card-controls" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11 6v12l-8.5-6zM21 6v12l-8.5-6z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M3 6v12l8.5-6zM13 6v12l8.5-6z"/></svg>
+            </div>
+          </div>
+        </div>
+        <canvas id="sky" width="1600" height="1000" aria-label="Song lyrics drawn as a constellation, one line at a time"></canvas>
+        <div class="spill"></div>
+        <div class="edge"></div>
+      </div>
+    </div>
+
+    <div class="controls reveal">
+      <div class="seg" role="radiogroup" aria-label="Look">
+        <button type="button" role="radio" aria-checked="true" data-look="constellation">Constellation</button>
+        <button type="button" role="radio" aria-checked="false" data-look="player">With player</button>
+      </div>
+      <div class="seg" role="radiogroup" aria-label="Edge light">
+        <button type="button" role="radio" aria-checked="true" data-light="sync">Music sync</button>
+        <button type="button" role="radio" aria-checked="false" data-light="breathe">Breathe</button>
+        <button type="button" role="radio" aria-checked="false" data-light="still">Still</button>
+        <button type="button" role="radio" aria-checked="false" data-light="off">Off</button>
+      </div>
+    </div>
+
+    <form class="try-form reveal" id="song-form">
+      <label class="visually-hidden" for="song">Try a song: its name and artist</label>
+      <input id="song" name="song" maxlength="80" autocomplete="off" placeholder="Try a song and artist">
+      <button type="submit" aria-label="Play this song"><svg aria-hidden="true"><use href="#star"/></svg></button>
+    </form>
+    <p class="song-status" id="song-status" aria-live="polite"></p>
+  </section>
+
+  <section class="section wrap" aria-labelledby="what-title">
+    <h2 id="what-title" class="visually-hidden">What Afterglow does</h2>
+    <ul class="features" data-stagger data-live>
+      <li class="feature reveal">
+        <div class="art art-light" aria-hidden="true"><span class="art-rim"></span></div>
+        <h3>The edge light</h3>
+        <p>Glows in the album's colours and pulses with the kick drum, even when you lock.</p>
+      </li>
+      <li class="feature reveal">
+        <svg class="art art-lock" viewBox="0 0 160 100" aria-hidden="true">
+          <text class="art-clock" x="80" y="25" text-anchor="middle">9:41</text>
+          <polyline class="art-line" pathLength="100" points="30,72 62,50 96,64 130,42"/>
+          <circle class="art-star s1" cx="30" cy="72" r="2.2"/><circle class="art-star s2" cx="62" cy="50" r="2.2"/>
+          <circle class="art-star s3" cx="96" cy="64" r="2.2"/><circle class="art-star s4 big" cx="130" cy="42" r="4"/>
+        </svg>
+        <h3>Your lock screen</h3>
+        <p>Every word lights a star as it's sung, alone on black or under the player.</p>
+      </li>
+      <li class="feature reveal">
+        <svg class="art art-sync" viewBox="0 0 160 100" aria-hidden="true">
+          <defs><clipPath id="sung"><rect class="art-sung" x="0" y="0" width="160" height="100"/></clipPath></defs>
+          <g class="art-wave"><rect x="8.0" y="57.0" width="2.6" height="14" rx="1.3"/><rect x="12.6" y="53.0" width="2.6" height="22" rx="1.3"/><rect x="17.2" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="21.8" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="26.4" y="55.0" width="2.6" height="18" rx="1.3"/><rect x="31.0" y="49.0" width="2.6" height="30" rx="1.3"/><rect x="35.6" y="42.0" width="2.6" height="44" rx="1.3"/><rect x="40.2" y="46.0" width="2.6" height="36" rx="1.3"/><rect x="44.8" y="52.0" width="2.6" height="24" rx="1.3"/><rect x="49.4" y="56.0" width="2.6" height="16" rx="1.3"/><rect x="54.0" y="50.0" width="2.6" height="28" rx="1.3"/><rect x="58.6" y="44.0" width="2.6" height="40" rx="1.3"/><rect x="63.2" y="38.0" width="2.6" height="52" rx="1.3"/><rect x="67.8" y="45.0" width="2.6" height="38" rx="1.3"/><rect x="72.4" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="77.0" y="54.0" width="2.6" height="20" rx="1.3"/><rect x="81.6" y="48.0" width="2.6" height="32" rx="1.3"/><rect x="86.2" y="41.0" width="2.6" height="46" rx="1.3"/><rect x="90.8" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="95.4" y="53.0" width="2.6" height="22" rx="1.3"/><rect x="100.0" y="57.0" width="2.6" height="14" rx="1.3"/><rect x="104.6" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="109.2" y="45.0" width="2.6" height="38" rx="1.3"/><rect x="113.8" y="49.0" width="2.6" height="30" rx="1.3"/><rect x="118.4" y="54.0" width="2.6" height="20" rx="1.3"/><rect x="123.0" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="127.6" y="40.0" width="2.6" height="48" rx="1.3"/><rect x="132.2" y="46.0" width="2.6" height="36" rx="1.3"/><rect x="136.8" y="52.0" width="2.6" height="24" rx="1.3"/><rect x="141.4" y="55.0" width="2.6" height="18" rx="1.3"/><rect x="146.0" y="58.0" width="2.6" height="12" rx="1.3"/><rect x="150.6" y="60.0" width="2.6" height="8" rx="1.3"/></g>
+          <g class="art-wave lit" clip-path="url(#sung)"><rect x="8.0" y="57.0" width="2.6" height="14" rx="1.3"/><rect x="12.6" y="53.0" width="2.6" height="22" rx="1.3"/><rect x="17.2" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="21.8" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="26.4" y="55.0" width="2.6" height="18" rx="1.3"/><rect x="31.0" y="49.0" width="2.6" height="30" rx="1.3"/><rect x="35.6" y="42.0" width="2.6" height="44" rx="1.3"/><rect x="40.2" y="46.0" width="2.6" height="36" rx="1.3"/><rect x="44.8" y="52.0" width="2.6" height="24" rx="1.3"/><rect x="49.4" y="56.0" width="2.6" height="16" rx="1.3"/><rect x="54.0" y="50.0" width="2.6" height="28" rx="1.3"/><rect x="58.6" y="44.0" width="2.6" height="40" rx="1.3"/><rect x="63.2" y="38.0" width="2.6" height="52" rx="1.3"/><rect x="67.8" y="45.0" width="2.6" height="38" rx="1.3"/><rect x="72.4" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="77.0" y="54.0" width="2.6" height="20" rx="1.3"/><rect x="81.6" y="48.0" width="2.6" height="32" rx="1.3"/><rect x="86.2" y="41.0" width="2.6" height="46" rx="1.3"/><rect x="90.8" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="95.4" y="53.0" width="2.6" height="22" rx="1.3"/><rect x="100.0" y="57.0" width="2.6" height="14" rx="1.3"/><rect x="104.6" y="51.0" width="2.6" height="26" rx="1.3"/><rect x="109.2" y="45.0" width="2.6" height="38" rx="1.3"/><rect x="113.8" y="49.0" width="2.6" height="30" rx="1.3"/><rect x="118.4" y="54.0" width="2.6" height="20" rx="1.3"/><rect x="123.0" y="47.0" width="2.6" height="34" rx="1.3"/><rect x="127.6" y="40.0" width="2.6" height="48" rx="1.3"/><rect x="132.2" y="46.0" width="2.6" height="36" rx="1.3"/><rect x="136.8" y="52.0" width="2.6" height="24" rx="1.3"/><rect x="141.4" y="55.0" width="2.6" height="18" rx="1.3"/><rect x="146.0" y="58.0" width="2.6" height="12" rx="1.3"/><rect x="150.6" y="60.0" width="2.6" height="8" rx="1.3"/></g>
+          <text class="art-word w1" x="24" y="24" text-anchor="middle">every</text>
+          <text class="art-word w2" x="62" y="24" text-anchor="middle">word</text>
+          <text class="art-word w3" x="100" y="24" text-anchor="middle">lights</text>
+          <text class="art-word w4" x="136" y="24" text-anchor="middle">up</text>
+          <line class="art-head" x1="8" y1="34" x2="8" y2="94"/>
+        </svg>
+        <h3>Timed to the singer</h3>
+        <p>It listens once, on your Mac, and remembers when each word was sung.</p>
+      </li>
+      <li class="feature reveal">
+        <div class="art art-pair" aria-hidden="true"><span class="art-mac"></span><span class="art-mac joins"></span></div>
+        <h3>Listen along</h3>
+        <p>Join a friend's Mac nearby: their song, lyrics and beat light up yours.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="closing" aria-labelledby="ready-title">
+    <div class="wrap">
+      <h2 id="ready-title" class="display reveal">Ready in three minutes</h2>
+      <div class="sky reveal">
+        <svg class="sky-line" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="50,74 150,48 250,18"/></svg>
+        <ol class="sky-steps">
+          <li style="--y:0.74;--d:150ms"><span class="sky-star" aria-hidden="true"><svg><use href="#star"/></svg></span><h3>Install</h3><p>One line in Terminal.</p></li>
+          <li style="--y:0.48;--d:700ms"><span class="sky-star" aria-hidden="true"><svg><use href="#star"/></svg></span><h3>Set up</h3><p>Allow Spotify or Music, and your Mac's sound.</p></li>
+          <li class="peak" style="--y:0.18;--d:1250ms"><span class="sky-star" aria-hidden="true"><svg><use href="#star"/></svg></span><h3>Play and lock</h3><p>Play a song, then press ⌃⌘Q.</p></li>
+        </ol>
+      </div>
+      <div class="hero-action reveal">
+        <a class="button" href="install.html"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Get Afterglow</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="brand" href="./"><svg class="mark still" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="bars"><rect x="11.25" y="60" width="9.5" height="30" rx="4.75"/><rect x="28.25" y="40" width="9.5" height="50" rx="4.75"/><rect x="45.25" y="53" width="9.5" height="37" rx="4.75"/><rect x="62.25" y="28" width="9.5" height="62" rx="4.75"/><rect x="79.25" y="47" width="9.5" height="43" rx="4.75"/></g>
+      <circle class="halo" cx="67" cy="17.5" r="15"/>
+      <polyline class="line" pathLength="100" points="16,52.5 33,32.5 50,45.5 67,17.5 84,39.5"/>
+      <g class="stars"><path d="M16 49.1Q16.54 51.96 19.4 52.5Q16.54 53.04 16 55.9Q15.46 53.04 12.6 52.5Q15.46 51.96 16 49.1Z"/><path d="M33 29.1Q33.54 31.96 36.4 32.5Q33.54 33.04 33 35.9Q32.46 33.04 29.6 32.5Q32.46 31.96 33 29.1Z"/><path d="M50 42.1Q50.54 44.96 53.4 45.5Q50.54 46.04 50 48.9Q49.46 46.04 46.6 45.5Q49.46 44.96 50 42.1Z"/><path class="peak" d="M67 10Q68.2 16.3 74.5 17.5Q68.2 18.7 67 25Q65.8 18.7 59.5 17.5Q65.8 16.3 67 10Z"/><path d="M84 36.1Q84.54 38.96 87.4 39.5Q84.54 40.04 84 42.9Q83.46 40.04 80.6 39.5Q83.46 38.96 84 36.1Z"/></g>
+    </svg>Afterglow</a>
+  <nav class="footer-links" aria-label="More">
+    <a href="install.html">Install</a>
+    <a href="updates.html">Updates</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="https://github.com/AryenP/afterglow/issues">Report a problem</a>
+  </nav>
+  <p class="footer-note">© 2026 Afterglow · Made by <a class="link" href="https://aryenp.github.io/">Aryen</a> · Not affiliated with Spotify or Apple.</p>
+</footer>
+
+<script src="site.js?v=33"></script>
+<script src="demo.js?v=26"></script>
+</body>
+</html>
